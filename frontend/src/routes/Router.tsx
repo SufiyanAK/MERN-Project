@@ -1,14 +1,19 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "../components/Home"
-import CreateProduct from "../components/CreateProduct"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Home from "../pages/Home"
+import CreateProduct from "../pages/CreateProduct"
+import App from "../App"
 
-const Router = () => {
+const AppRouter = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/create-product" element={<CreateProduct />} />
-        </Routes>
+        <Router>
+            <Routes>
+                <Route element={<App />}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/create-product" element={<CreateProduct />} />
+                </Route>
+            </Routes>
+        </Router>
     )
 }
 
-export default Router
+export default AppRouter

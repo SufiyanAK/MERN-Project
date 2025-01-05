@@ -4,5 +4,5 @@
 
 html,
 body {
-  @apply min-h-dvh h-full bg-gradient-to-r from-[#2C3E50] to-[#000000] text-white;
+  @apply min-h-dvh h-full text-white;
 }
