@@ -1,8 +1,8 @@
-import { Button } from "@chakra-ui/react"
+import Router from './routes/Router'
 
 const App = () => {
   return (
-    <Button colorScheme="blackAlpha">Hello World</Button>
+    <Router />
   )
 }
 
