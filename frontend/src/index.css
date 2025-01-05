@@ -4,5 +4,5 @@
 
 html,
 body {
-  @apply min-h-dvh h-full text-white;
+  @apply min-h-dvh h-full text-black dark:text-white;
 }

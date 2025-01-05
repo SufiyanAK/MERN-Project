@@ -4,24 +4,34 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        background: '#0f172a', // Dark blue background
-        "gradient-start": '#4E65FF', // Light blue background
-        "gradient-end": '#1a202c', // Dark blue background
-        "btn-clr": '#4E65FF', // Light blue background
+        background: {
+          light: '#f0f4f8',
+          dark: '#111827',
+        },
+        "gradient-start": '#3b82f6',
+        "gradient-end": '#1e40af',
+        "light-gradient-start": '#f0f4f8',
+        "light-gradient-end": '#e2e8f0',
+        "btn-clr": {
+          light: '#3b82f6',
+          dark: '#2563eb',
+          hover: '#1d4ed8'
+        },
         primary: {
-          DEFAULT: '#6366f1', // Indigo
-          light: '#e0e7ff'    // Light indigo
+          DEFAULT: '#3b82f6',
+          light: '#bfdbfe'
         },
         secondary: {
-          DEFAULT: '#f8fafc', // Slate 50
-          dark: '#94a3b8'     // Slate 400
+          DEFAULT: '#f8fafc',
+          dark: '#94a3b8'
         }
       },
       boxShadow: {
-        'glow': '0 0 15px rgba(99, 102, 241, 0.5)',
+        'glow': '0 0 15px rgba(59, 130, 246, 0.5)',
       }
     },
   },
